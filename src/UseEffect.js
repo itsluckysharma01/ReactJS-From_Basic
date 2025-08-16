@@ -8,7 +8,14 @@ const [count, setCount] = useState(0);
 
   useEffect(()=>{
     // alert('we are in new state')
-    console.log('we are in new state')
+    console.log('we are in new state');
+
+    // write a cleanup code 
+    return()=>{
+      console.log('Return of usestate');
+
+
+    };
   },[clicked,count]);
 
 
