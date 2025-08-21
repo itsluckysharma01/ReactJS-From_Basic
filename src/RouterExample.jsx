@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import NavBar from './navBar';
 import Login from './Login';
+import Error from './Error';
 
 const RouterExamples = () => {
   return (
@@ -16,6 +17,7 @@ const RouterExamples = () => {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       </BrowserRouter>
     </div>
